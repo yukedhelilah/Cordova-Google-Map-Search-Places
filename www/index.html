@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>DAPUR 123</title>
+    <meta name="description" content="Dapur 123 adalah aplikasi pemesanan makanan homemade">
+    <meta name="keywords" content="Dapur123, Dapur 123" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+        </div>
+        <div class="pageTitle">Setting Address</div>
+        <div class="right">
+            <!-- <a href="map.html" class="headerButton">
+                <span class="btn btn-secondary btn-sm">Map</span>
+            </a> -->
+        </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- Extra Header -->
+    <div class="extraHeader">
+        <form class="search-form">
+            <div class="form-group searchbox">
+                <input type="text" class="form-control" placeholder="Enter address..." id="search_input">
+                <i class="input-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </i>
+            </div>
+        </form>
+    </div>
+    <!-- * Extra Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="extra-header-active full-height">
+
+        <div class="section full mt-2">
+            <div class="card">
+                <div class="card-header">Result</div>
+                <ul class="listview flush transparent image-listview text">
+                    <li>
+                        <a href="javascript:;" onclick="getChooseAddress('details here')" class="item">
+                            <div class="in">
+                                <div>No 20, Street name<br><small>Full address, City, Zipcode</small></div>
+                                <span class="text-muted">
+                                    3.91km
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="getChooseAddress('details here')" class="item">
+                            <div class="in">
+                                <div>No 20, Street name<br><small>Full address, City, Zipcode</small></div>
+                                <span class="text-muted">
+                                    3.91km
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="getChooseAddress('details here')" class="item">
+                            <div class="in">
+                                <div>No 20, Street name<br><small>Full address, City, Zipcode</small></div>
+                                <span class="text-muted">
+                                    3.91km
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fab-button text bottom-right">
+            <a href="map.html" class="fab btn btn-primary btn-sm btn-block">
+                <ion-icon name="location"></ion-icon>
+                Map
+            </a>
+        </div>
+
+    </div>
+
+    <!-- * App Capsule -->
+
+    <!-- CORDOVA REQUIRED -->
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- ///////////// Js Files ////////////////////  -->
+    <!-- Jquery -->
+    <script src="assets/js/lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="assets/js/lib/popper.min.js"></script>
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+    <!-- CUSTOM -->
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCOikU0iE-nWxF6rYUXtmokMM47GH7EIFo"></script>
+    <script src="js/address_choose.js"></script>
+</body>
+
+</html>
